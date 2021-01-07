@@ -1,0 +1,15 @@
+.header {
+    @apply fixed left-0 top-0 right-0 bg-transparent;
+}
+.contact__btn {
+    @apply flex justify-center items-center uppercase mx-auto;
+    margin-top: 23px;
+    background-color: #272727;
+    width: 84px;
+    height: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #C9C9C9;
+    border-radius: 11px;
+}
