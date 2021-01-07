@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import React from "react";
-import FastLanes from "./components/FastLanes/FastLanes";
+// import FastLanes from "./components/FastLanes/FastLanes";
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends React.Component {
       <>
         <Header />
         <Banner scrollByRef={this.scrollByRef} />
-        <FastLanes ref={this.scrollByRef} />
+        {/*<FastLanes ref={this.scrollByRef} />*/}
       </>
     );
   }

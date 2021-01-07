@@ -30,7 +30,11 @@ class Banner extends React.Component {
             className={styles.scroll__down__btn}
             onClick={this.handleScrollDown}
           >
-            <img src={scrollDown} alt="Scroll Down" />
+            <img
+              src={scrollDown}
+              className="animate-bounce"
+              alt="Scroll Down"
+            />
           </button>
           <span className={styles.scroll__down__icon__text_first}>
             Scroll Down
