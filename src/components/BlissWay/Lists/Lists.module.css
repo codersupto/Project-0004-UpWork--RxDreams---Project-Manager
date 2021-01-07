@@ -1,0 +1,40 @@
+.list__wrap {
+    margin-left: 32px;
+}
+
+.heading {
+    @apply text-white font-bold;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 21px;
+}
+ul.list__items {
+    margin-left: 14px;
+}
+li.list__item {
+    @apply font-light;
+    line-height: 22px;
+    color: #A2A2A2;
+    margin: 10px 0;
+}
+img.list__item__left__arrow {
+    @apply inline-block;
+    margin-right: 20px;
+}
+
+/**/
+@screen xl {
+    .list__wrap {
+        @apply h-full;
+        padding-top: 120px;
+        padding-left: 55px;
+        width: 534px;
+        margin-left: auto;
+        margin-right: 150px;
+        background-color: #000000db;
+    }
+    .li.list__item {
+        font-size: 23px;
+        line-height: 32px;
+    }
+}

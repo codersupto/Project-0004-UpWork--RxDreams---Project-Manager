@@ -1,0 +1,79 @@
+.section {
+    @apply relative;
+    padding-bottom: 270px;
+}
+.text__wrap {
+    @apply xl:container;
+    margin-bottom: 157px;
+    margin-top: -30px;
+}
+.main__heading {
+    @apply font-black text-white px-8;
+    line-height: 52px;
+    font-size: 44px;
+}
+.sub__heading {
+    @apply font-bold text-white px-8;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 11px;
+}
+.description {
+    @apply px-8;
+    line-height: 20px;
+    color: #A8A8A8;
+}
+.middle__shape__wrap {
+    @apply container;
+}
+.mobile__shape__left__middle {
+    @apply xl:hidden;
+    /*left: 14px;*/
+}
+.lg__shape__left__middle {
+    @apply hidden xl:block ;
+    margin-left: 224px;
+}
+.bottom__shape__wrap {
+    @apply xl:container relative;
+}
+.mobile__shape__bottom__right {
+    @apply xl:hidden ml-auto;
+    margin-right: 14px;
+}
+.lg__shape__bottom__right {
+    @apply hidden xl:block ml-auto;
+    margin-right: 153px;
+}
+
+/*Screen LG*/
+@screen lg {
+    .text__wrap {
+        margin-bottom: 66px;
+    }
+    .main__heading {
+        @apply font-black;
+        font-size: 97px;
+        line-height: 117px;
+        padding-left: 183px;
+    }
+    .sub__heading {
+        width: 715px;
+        font-size: 38px;
+        line-height: 50px;
+        padding-left: 183px;
+    }
+    .description {
+        width: 715px;
+        font-size: 28px;
+        line-height: 37px;
+        padding-left: 183px;
+    }
+    .middle__shape__wrap {
+        margin-bottom: 29px;
+    }
+    .bottom__shape__wrap {
+        margin-top: 67px;
+    }
+}
+

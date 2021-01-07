@@ -1,5 +1,5 @@
 .header {
-    @apply fixed left-0 top-0 right-0 bg-transparent;
+    @apply fixed left-0 top-0 right-0 bg-transparent z-50;
 }
 .contact__btn {
     @apply flex justify-center items-center uppercase mx-auto;

@@ -1,0 +1,41 @@
+.pagination {
+    @apply flex justify-between items-center mx-auto;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #12739B;
+    width: 162px;
+    height: 28px;
+    border-radius: 30px;
+    transform: translateY(-50%);
+}
+
+.button {
+    @apply bg-transparent inline-block transition-all focus:outline-none focus:border-opacity-0 hover:text-white;
+    color: #1BA5DE;
+    padding: 6px 19px;
+    line-height: 20px;
+    border-radius: 41px;
+}
+.active {
+    @apply text-white;
+    background-color: #1BA5DE;
+    line-height: 24px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+/*Laptop Screen*/
+@screen xl {
+    .pagination {
+        @apply absolute top-1/2 left-auto transform -translate-y-1/2 rotate-90 z-20;
+        height: 62px;
+        width: 293px;
+        right: 0;
+    }
+    .button {
+        border-radius: 41px;
+        padding: 10px 37px;
+        font-size: 34px;
+        line-height: 53px;
+    }
+}

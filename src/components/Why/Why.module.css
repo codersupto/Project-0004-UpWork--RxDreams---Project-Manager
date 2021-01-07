@@ -27,13 +27,13 @@
 }
 
 .lg__shape__bottom__right {
-    @apply hidden xl:block absolute top-4 right-0 bottom-0;
+    @apply hidden xl:block absolute top-4 right-0 bottom-0 h-full;
 }
 
 /*desktop Screen*/
 @screen xl {
     .section {
-        margin-bottom: 546px;
+        padding-bottom: 546px;
     }
     .container {
         max-width: 1231px;
