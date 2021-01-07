@@ -14,7 +14,7 @@
     border-radius: 11px;
 }
 
-@screen desktop {
+@screen xl {
     .contact__btn {
         @apply ml-auto;
         margin-top: 34px;

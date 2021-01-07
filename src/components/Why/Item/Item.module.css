@@ -1,0 +1,51 @@
+.item {
+    @apply text-white;
+    padding-top: 41px;
+    padding-bottom: 64px;
+    margin-left: 19px;
+    margin-right: 19px;
+    background-color: #2E2E2E;
+    border-radius: 20px;
+}
+.icon {
+    @apply w-20 h-20 object-cover block mx-auto;
+    margin-bottom: 30px;
+}
+.text__wrap {
+    @apply text-center;
+    margin: 0 60px;
+}
+.heading {
+    @apply font-bold;
+    line-height: 20px;
+}
+.paragraph {
+    font-weight: 100;
+}
+
+/*Laptop Screen*/
+@screen xl {
+    .item {
+        @apply mx-0 flex items-center;
+        min-height: 375px;
+        padding-left: 120px;
+        border-radius: 41px;
+    }
+    .icon {
+        @apply m-0;
+        width: 167px;
+        height: 167px;
+        margin-right: 54px;
+    }
+    .text__wrap {
+        @apply m-0 text-left;
+    }
+    .heading {
+        line-height: 36px;
+        font-size: 27px;
+    }
+    .paragraph {
+        line-height: 36px;
+        font-size: 27px;
+    }
+}

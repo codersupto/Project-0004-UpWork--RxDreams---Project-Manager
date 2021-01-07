@@ -5,7 +5,7 @@
 }
 
 .up__shape {}
-.mobile__shape {
+.mobile__shape__top__left {
     @apply w-full h-auto laptop:hidden;
     margin-left: 32px;
     /*width: 339px;*/

@@ -11,12 +11,12 @@
 }
 
 .mobile__banner__solving__text {
-    @apply w-full h-auto desktop:hidden;
+    @apply w-full h-auto lg:hidden;
     margin-bottom: 8px;
 }
 
 .desktop__banner__solving__text {
-    @apply w-full h-auto hidden desktop:block;
+    @apply w-full h-auto hidden lg:block;
 }
 
 .normal__text {
@@ -53,7 +53,7 @@
 }
 
 /*Desktop Screen*/
-@screen desktop {
+@screen xl {
     .banner {
         height: 767px;
     }

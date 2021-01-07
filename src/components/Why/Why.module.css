@@ -1,0 +1,48 @@
+.section {
+    @apply container relative;
+    margin-top: 126px;
+}
+
+.text {
+    @apply ml-8;
+}
+.heading {
+    @apply font-black text-white;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 17px;
+}
+
+.paragraph {
+    line-height: 16px;
+    color: #A8A8A8;
+    margin-bottom: 38px;
+}
+
+.i__and_p__wrap {}
+
+.mobile__shape__bottom__right {
+    @apply ml-auto -mt-8 xl:hidden;
+    margin-right: 19px;
+}
+
+.lg__shape__bottom__right {
+    @apply hidden xl:block absolute top-4 right-0 bottom-0;
+}
+
+/*desktop Screen*/
+@screen xl {
+    .section {
+        margin-bottom: 546px;
+    }
+    .container {
+        max-width: 1231px;
+    }
+    .text {
+        margin-left: 196px;
+    }
+    .i__and_p__wrap {
+        @apply mx-auto relative;
+        width: 820px;
+    }
+}
