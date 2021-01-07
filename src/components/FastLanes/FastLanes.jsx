@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./FastLanes.module.css";
 
 const FastLanes = React.forwardRef((props, ref) => {
-  console.log(styles);
   return (
     <section ref={ref} className={styles.fast__lanes}>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum ex excepturi
