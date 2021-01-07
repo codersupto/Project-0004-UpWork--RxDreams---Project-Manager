@@ -13,3 +13,11 @@
     color: #C9C9C9;
     border-radius: 11px;
 }
+
+@screen desktop {
+    .contact__btn {
+        @apply ml-auto;
+        margin-top: 34px;
+        margin-right: 34px;
+    }
+}
