@@ -1,9 +1,6 @@
 .section {
     @apply container;
 }
-.up__shape__wrap {
-    height: 225px;
-}
 .mobile__up__shape {
     @apply h-full relative mx-auto xl:hidden;
     margin-top: -58px;
@@ -18,7 +15,7 @@
 }
 
 .video__play__button {
-    @apply absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none z-20;
+    @apply absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none z-10;
     width: 78px;
     height: 78px;
 }
@@ -80,7 +77,7 @@
 
 /*Open state*/
 .video__inner_wrap__open .intro__video {
-    @apply opacity-100;
+    opacity: 100%;
 }
 .video__inner_wrap__open .lg__popup__shape {
     @apply block absolute top-0 h-full;
@@ -107,16 +104,9 @@
 
 /**/
 @screen xl {
-    .up__shape__wrap {
-        height: 323px;
+    .section {
+        margin-top: -117px;
     }
-    .lg__up__shape {
-        @apply lg:block;
-        margin-top: 43px;
-        width: 15px;
-        height: 446px;
-    }
-
     .video__wrap {
         @apply p-0;
         margin-left: 237px;
@@ -134,7 +124,7 @@
     }
     .section__text__wrap {
         @apply items-end;
-        width: 509px;
+        width: 656px;
     }
     .section__text__wrap h1 {
         font-size: 78px;
@@ -151,8 +141,8 @@
     }
     .lg__bottom__shape {
         @apply h-full;
-        width: 97px;
-        margin-left: 257px;
+        width: 107px;
+        margin-left: 298px;
     }
 
     /*open state*/

@@ -6,6 +6,7 @@ import Why from "./components/Why/Why";
 import BlissWay from "./components/BlissWay/BlissWay";
 import NewTake from "./components/NewTake/NewTake";
 import TheWay from "./components/TheWay/TheWay";
+import HowBlissway from "./components/HowBlissway/HowBlissway";
 // import FastLanes from "./components/FastLanes/FastLanes";
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
         <BlissWay />
         <NewTake />
         <TheWay />
+        <HowBlissway />
       </React.Fragment>
     );
   }

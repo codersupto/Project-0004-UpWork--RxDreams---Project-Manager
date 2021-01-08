@@ -1,20 +1,18 @@
 import React from "react";
-import mobileUpShape from "../../assets/images/TheWay/shapes/mobile-up-shape.svg";
-import lgUpShape from "../../assets/images/TheWay/shapes/lg-up-shape.svg";
-import mobileBottomShape from "../../assets/images/TheWay/shapes/mobile-bottom-shape.svg";
-import lgBottomShape from "../../assets/images/TheWay/shapes/lg-bottom-shape.svg";
-import theWayIntroVideo from "../../assets/videos/the-way-intro.mp4";
-import theWayIntroVideoBanner from "../../assets/images/TheWay/intro-video-banner.png";
-import playButtonIcon from "../../assets/images/TheWay/shapes/play-button-icon.svg";
-import lgPopUpShape from "../../assets/images/TheWay/shapes/lg-video-popup-shape.svg";
-import closeButtonIcon from "../../assets/images/TheWay/shapes/close-button-icon.svg";
-import styles from "./TheWay.module.css";
+import mobileBottomShape from "../../assets/images/HowBlissway/shapes/mobile-bottom-shape.svg";
+import lgBottomShape from "../../assets/images/HowBlissway/shapes/lg-bottom-shape.svg";
+import howBlisswayIntroVideo from "../../assets/videos/the-way-intro.mp4";
+import howBlisswayIntroVideoBanner from "../../assets/images/HowBlissway/intro-video-banner.png";
+import playButtonIcon from "../../assets/images/HowBlissway/shapes/play-button-icon.svg";
+import lgPopUpShape from "../../assets/images/HowBlissway/shapes/lg-video-popup-shape.svg";
+import closeButtonIcon from "../../assets/images/HowBlissway/shapes/close-button-icon.svg";
+import styles from "./HowBlissway.module.css";
 
-function TheWay(props) {
+function HowBlissway(props) {
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [state] = React.useState({
-    title: "The Why",
-    subTitle: "of traffic congestion",
+    title: "How BLISSWAY",
+    subTitle: "can solve it",
   });
 
   const videoRef = React.useRef({ current: null });
@@ -31,10 +29,6 @@ function TheWay(props) {
 
   return (
     <section className={styles.section}>
-      <div className={styles.up__shape__wrap}>
-        <img className={styles.mobile__up__shape} src={mobileUpShape} alt="" />
-        <img className={styles.lg__up__shape} src={lgUpShape} alt="" />
-      </div>
       <div className={styles.video__wrap}>
         <button
           onClick={handlePlayVideo}
@@ -73,10 +67,10 @@ function TheWay(props) {
                 />
               </button>
               <video
-                poster={theWayIntroVideoBanner}
+                poster={howBlisswayIntroVideoBanner}
                 ref={videoRef}
                 className={styles.intro__video}
-                src={theWayIntroVideo}
+                src={howBlisswayIntroVideo}
               />
             </div>
           </div>
@@ -94,4 +88,4 @@ function TheWay(props) {
   );
 }
 
-export default TheWay;
+export default HowBlissway;
