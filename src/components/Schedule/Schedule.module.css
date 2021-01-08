@@ -1,0 +1,67 @@
+.section {
+    @apply container -mt-4;
+}
+.inner__wrap {
+    @apply text-center mx-auto;
+    width: 337px;
+    padding: 49px 19px 20px;
+    border-radius: 20px;
+    background-color: #2E2E2E;
+}
+.heading {
+    @apply text-white font-black;
+    line-height: 24px;
+    margin-bottom: 41px;
+}
+.color__heading {
+    color: #21DEDE;
+}
+.form {
+    @apply mx-auto;
+    width: 259px;
+}
+.form input {
+    @apply block w-full text-center text-white bg-transparent px-4 py-5 block border-0 border-b-2 focus:outline-none;
+}
+.form input::placeholder {
+    @apply font-light;
+    line-height: 36px;
+}
+.form button {
+    @apply font-medium;
+    margin-top: 35px;
+    line-height: 19px;
+    color: #21DEDE;
+}
+.form button .arrow {
+    @apply ml-2 inline-block;
+}
+
+/**/
+@screen xl {
+    .section {
+        @apply -mt-28;
+    }
+    .inner__wrap {
+        width: 651px;
+        padding: 101px 19px 112px;
+    }
+    .heading {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 54px;
+    }
+    .form {
+        @apply relative;
+        width: 454px;
+    }
+    .form input {
+        @apply text-left pr-24;
+    }
+    .form button {
+        @apply absolute top-1/2 right-0 mt-0 transform -translate-y-1/2;
+        font-size: 20px;
+        line-height: 24px;
+        color: #21DEDE;
+    }
+}
