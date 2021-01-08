@@ -1,16 +1,16 @@
-.fast__lanes {
-    @apply text-white;
+.section {
+    @apply text-white container relative;
     padding-top: 103px;
     margin-bottom: 100px;
 }
 
-.up__shape {}
-.mobile__shape__top__left {
-    @apply w-full h-auto laptop:hidden;
-    margin-left: 32px;
-    /*width: 339px;*/
+.up__shape__wrap {}
+.up__shape__wrap .mobile__shape{
+    @apply ml-auto mr-0 xl:hidden;
+    width: 343px;
 }
-.desktop__shape {}
+
+
 
 .text__wrap {
 }
@@ -27,6 +27,7 @@
     width: 273px;
 }
 
+
 .img__wrap {
     @apply bg-no-repeat bg-cover relative;
     margin: 75px 19px 0 19px;
@@ -36,23 +37,34 @@
     border-radius: 22px;
     height: 195px;
 }
-img.mobile__img__up__shape {
-    @apply desktop:hidden absolute left-0;
+
+
+
+.mobile__img__up__shape {
+    @apply xl:hidden absolute left-0;
     width: 113px;
     top: -16px;
 }
 
-/*Laptop Screen*/
-@screen laptop {
-    .fast__lanes {
-        @apply mx-auto relative;
-        width: 898px;
-        height: 478px;
+/*xl screen*/
+@screen xl {
+    .section {
+        padding-top: 388px;
+        /*@apply mx-auto relative;*/
+        /*width: 898px;*/
+    }
+    .up__shape__wrap {
+        @apply absolute left-auto right-0 z-10;
+        width: 762px;
+        top: 388px;
+    }
+    .up__shape__wrap .lg__shape {
+        @apply hidden xl:block;
     }
     .text__wrap {
-        @apply absolute z-10;
-        top: -90px;
-        right: -35px;
+        @apply absolute z-20;
+        top: 298px;
+        right: 199px;
         width: 496px;
         background-color: #2E2E2E;
         border-radius: 41px;
@@ -74,9 +86,15 @@ img.mobile__img__up__shape {
 
     .img__wrap {
         @apply h-full;
-        margin: 0;
+        margin: 0 234px;
     }
     .img {
         @apply h-full;
+    }
+    .lg__img__up__shape {
+        @apply hidden xl:block absolute left-0 top-0;
+        width: 495px;
+        margin-left: -166px;
+        margin-top: -33px;
     }
 }

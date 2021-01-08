@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 
-function Header(props) {
+function Header() {
   return (
     <header className={styles.header}>
       <a href="/" className={`${styles.contact__btn}`}>

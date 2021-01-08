@@ -1,15 +1,21 @@
 import React from "react";
-import mobileFastLanes from "./../../assets/images/svgs/mobile-fast-lanes-up-shape.svg";
-import fastLanesImg from "./../../assets/images/fast-lanes-img.png";
-import mobileFastLanesImgUpShape from "./../../assets/images/svgs/mobile-fast-lanes-img-up-shape.svg";
+import mobileFastLanesUpShape from "../../assets/images/FastLanes/shapes/mobile-fast-lanes-up-shape.svg";
+import lgFastLanesUpShape from "../../assets/images/FastLanes/shapes/lg-fast-lanes-up-shape.svg";
+import fastLanesImg from "../../assets/images/FastLanes/fast-lanes-img.png";
+import mobileFastLanesImgUpShape from "../../assets/images/FastLanes/shapes/mobile-fast-lanes-img-up-shape.svg";
+import lgFastLanesImgUpShape from "../../assets/images/FastLanes/shapes/lg-fast-lanes-img-up-shape.svg";
 import styles from "./FastLanes.module.css";
 
 const FastLanes = React.forwardRef((props, ref) => {
   return (
-    <section ref={ref} className={styles.fast__lanes}>
-      <div className={styles.up__shape}>
-        <img className={styles.mobile__shape} src={mobileFastLanes} alt="" />
-        <img className={styles.desktop__shape} src="" alt="" />
+    <section ref={ref} className={styles.section}>
+      <div className={styles.up__shape__wrap}>
+        <img
+          className={styles.mobile__shape}
+          src={mobileFastLanesUpShape}
+          alt=""
+        />
+        <img className={styles.lg__shape} src={lgFastLanesUpShape} alt="" />
       </div>
       <div className={styles.wrap}>
         <div className={styles.text__wrap}>
@@ -23,6 +29,11 @@ const FastLanes = React.forwardRef((props, ref) => {
           <img
             className={styles.mobile__img__up__shape}
             src={mobileFastLanesImgUpShape}
+            alt=""
+          />
+          <img
+            className={styles.lg__img__up__shape}
+            src={lgFastLanesImgUpShape}
             alt=""
           />
         </div>
