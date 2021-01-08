@@ -1,0 +1,165 @@
+.section {
+    @apply container;
+}
+.up__shape__wrap {
+    height: 225px;
+}
+.mobile__up__shape {
+    @apply h-full relative mx-auto xl:hidden;
+    margin-top: -58px;
+}
+.lg__up__shape {
+    @apply hidden;
+    margin-left: 298px;
+}
+.video__wrap {
+    @apply text-center relative;
+    padding: 0 19px;
+}
+
+.video__play__button {
+    @apply absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none z-20;
+    width: 78px;
+    height: 78px;
+}
+.video__play__button__icon {
+    @apply w-full h-full;
+}
+.intro__video {
+    @apply w-full h-full object-cover;
+    border-radius: 20px;
+}
+.video__inner__wrap {
+
+}
+.video__inner__wrap__container {
+    @apply container relative h-full flex justify-center items-center;
+}
+.lg__popup__shape {
+    @apply hidden;
+}
+.video__inner_wrap__open {
+    @apply fixed inset-0 flex justify-center items-center z-20;
+    background-color: #0D0D0D;
+}
+.video__inner_wrap__with__close_button {
+    @apply mx-auto relative;
+    width: 337px;
+    height: 194px;
+}
+.section__text__wrap {
+    @apply absolute inset-0 flex justify-center flex-col z-10;
+}
+.section__text__wrap h1 {
+    @apply font-black text-white;
+    font-size: 40px;
+    line-height: 48px;
+}
+.section__text__wrap p {
+    @apply font-bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #A8A8A8;
+}
+
+.video__close__button {
+    @apply hidden;
+}
+/*bottom shape*/
+.bottom__shape__wrap {
+    height: 338px;
+}
+.mobile__bottom__shape {
+    @apply h-full relative mx-auto z-10 xl:hidden;
+    margin-top: -22px;
+}
+.lg__bottom__shape {
+    @apply hidden xl:block;
+}
+
+/*Open state*/
+.video__inner_wrap__open {
+}
+.video__inner_wrap__open .lg__popup__shape {
+    @apply block absolute top-0 h-full;
+    left: 232px;
+}
+
+
+.video__inner_wrap__open .video__inner_wrap__with__close_button {
+    @apply relative;
+}
+.video__inner_wrap__open .video__inner_wrap__with__close_button .intro__video {
+    /*border-radius: 20px;*/
+}
+
+.video__inner_wrap__open .video__inner_wrap__with__close_button .video__close__button {
+    @apply absolute right-0 top-0 w-8 h-8 transform translate-x-1/2 -translate-y-1/2 block;
+}
+.video__inner_wrap__open .video__inner_wrap__with__close_button .section__text__wrap {
+    @apply hidden;
+}
+.video__inner_wrap__open .video__inner_wrap__with__close_button .video__close__button__icon {
+    @apply w-full h-full object-contain;
+}
+
+/**/
+@screen xl {
+    .up__shape__wrap {
+        height: 323px;
+    }
+    .lg__up__shape {
+        @apply lg:block;
+        margin-top: 43px;
+        width: 15px;
+        height: 446px;
+    }
+
+    .video__wrap {
+        @apply p-0;
+        margin-left: 237px;
+    }
+    .video__play__button {
+        @apply left-0 top-1/2 translate-x-0 -translate-y-1/2;
+        width: 132px;
+        height: 132px;
+    }
+    .video__inner_wrap__with__close_button {
+        @apply mx-0 object-fill;
+        padding-left: 253px;
+        width: 945px;
+        height: 364px;
+    }
+    .section__text__wrap {
+        @apply items-end;
+        width: 509px;
+    }
+    .section__text__wrap h1 {
+        font-size: 78px;
+        line-height: 94px;
+    }
+    .section__text__wrap p {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .bottom__shape__wrap {
+        margin-top: -120px;
+        height: 671px;
+    }
+    .lg__bottom__shape {
+        @apply h-full;
+        width: 97px;
+        margin-left: 257px;
+    }
+
+    /*open state*/
+    .video__inner_wrap__open .video__inner_wrap__with__close_button {
+        @apply pl-0;
+        width: 968px;
+        height: 558px;
+    }
+    .video__inner_wrap__open .video__inner_wrap__with__close_button .video__close__button {
+        @apply w-16 h-16;
+    }
+}

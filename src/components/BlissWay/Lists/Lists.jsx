@@ -4,7 +4,6 @@ import listItemLeftArrow from "../../../assets/images/BlissWay-section/shapes/li
 import styles from "./Lists.module.css";
 
 function Lists({ list }) {
-  console.log(list);
   return (
     <div className={styles.list__wrap}>
       <h3 className={styles.heading}>{list.title}</h3>

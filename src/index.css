@@ -3,6 +3,10 @@
 @tailwind utilities;
 @tailwind screens;
 
+button {
+    @apply focus:outline-none;
+}
+
 html, body {
     @apply overflow-x-hidden;
     scroll-behavior: smooth;
