@@ -25,13 +25,15 @@
 }
 
 .lg__left__shape {
-    @apply hidden xl:block absolute top-0 left-0 z-20;
-    margin-left: 183px;
+    @apply hidden xl:block absolute z-20;
+    left: 258px;
+    top: 27px;
 }
 
 
 .bg__img__wrap {
     @apply relative;
+    height: 200px;
 }
 .bg__img__wrap:after {
     @apply block absolute left-0 bottom-0 right-0;
@@ -40,17 +42,20 @@
     background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0), rgba(13, 13, 13, 1));
 }
 .bg__image {
-    @apply w-full;
+    @apply w-full h-full object-cover;
 }
 
 /**/
 @screen xl {
+    .bg__img__wrap {
+        height: 400px;
+    }
     .heading {
-        margin-left: 410px;
+        margin-left: 478px;
         font-size: 38px;
         line-height: 36px;
     }
     .list__items {
-        margin: 0 420px;
+        margin: 0 492px;
     }
 }
