@@ -1,0 +1,56 @@
+.section {
+    margin-top: -30px;
+}
+.content__wrap {
+    @apply container relative;
+}
+.heading {
+    @apply font-black text-white mx-8;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+.list__items {
+    margin: 0 42px;
+}
+.list__item {
+    @apply font-light mb-4;
+    line-height: 22px;
+    color: #A2A2A2;
+}
+
+.list__left__arrow {
+    @apply inline-block;
+    margin-right: 20px;
+}
+
+.lg__left__shape {
+    @apply hidden xl:block absolute top-0 left-0 z-20;
+    margin-left: 183px;
+}
+
+
+.bg__img__wrap {
+    @apply relative;
+}
+.bg__img__wrap:after {
+    @apply block absolute left-0 bottom-0 right-0;
+    content: '';
+    height: 80%;
+    background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0), rgba(13, 13, 13, 1));
+}
+.bg__image {
+    @apply w-full;
+}
+
+/**/
+@screen xl {
+    .heading {
+        margin-left: 410px;
+        font-size: 38px;
+        line-height: 36px;
+    }
+    .list__items {
+        margin: 0 420px;
+    }
+}

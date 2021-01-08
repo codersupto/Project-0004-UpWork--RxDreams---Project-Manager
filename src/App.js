@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import React from "react";
 import Why from "./components/Why/Why";
 import BlissWay from "./components/BlissWay/BlissWay";
+import NewTake from "./components/NewTake/NewTake";
 // import FastLanes from "./components/FastLanes/FastLanes";
 
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
         {/*<FastLanes ref={this.scrollByRef} />*/}
         <Why />
         <BlissWay />
+        <NewTake />
       </React.Fragment>
     );
   }

@@ -1,6 +1,6 @@
 .section {
     @apply relative;
-    padding-bottom: 270px;
+    /*padding-bottom: 270px;*/
 }
 .text__wrap {
     @apply xl:container;

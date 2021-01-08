@@ -10,3 +10,11 @@ html, body {
     font-weight: normal;
     font-size: 16px;
 }
+
+@layer utilities {
+    @screen xl {
+        .container {
+            max-width: 1233px;
+        }
+    }
+}
