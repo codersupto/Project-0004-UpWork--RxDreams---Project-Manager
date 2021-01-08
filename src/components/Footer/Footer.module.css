@@ -1,0 +1,64 @@
+.section {
+    @apply container;
+    margin-top: 206px;
+}
+.email__sec {
+    @apply text-center;
+    font-size: 20px;
+    line-height: 24px;
+}
+.email__sec h1 {
+    @apply text-white font-black;
+}
+.email__sec p {
+    color: #21DEDE;
+}
+.logo__sec {
+    margin-top: 145px;
+    margin-bottom: 33px;
+}
+.logo__sec .logo__img {
+    @apply mx-auto mb-4;
+    width: 47px;
+    height: 54px;
+}
+.logo__sec .address {
+    @apply font-light mx-auto text-center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A2A2A2;
+    width: 160px;
+}
+
+.copyright__sec {
+    margin-bottom: 31px;
+}
+.copyright__sec p{
+    @apply text-center font-light text-white;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@screen xl {
+    .email__sec {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .logo__sec {
+        margin: 544px 115px 57px;
+    }
+    .logo__sec .logo__img {
+        @apply mx-0;
+    }
+    .logo__sec .address {
+        @apply mx-0 text-left;
+        width: 195px;
+    }
+    .copyright__sec {
+        margin-left: 115px;
+        margin-right: 115px;
+    }
+    .copyright__sec p {
+        @apply text-left;
+    }
+}
