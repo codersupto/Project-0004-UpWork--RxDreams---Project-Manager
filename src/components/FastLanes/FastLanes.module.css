@@ -1,5 +1,5 @@
 .section {
-    @apply text-white container relative;
+    @apply text-white relative;
     padding-top: 103px;
     margin-bottom: 100px;
 }
@@ -13,6 +13,9 @@
     @apply hidden xl:block;
 }
 
+.wrap {
+    @apply container relative;
+}
 
 
 .text__wrap {
@@ -60,16 +63,17 @@
         /*width: 898px;*/
     }
     .up__shape__wrap {
-        @apply absolute left-auto right-0 z-10;
-        width: 762px;
+        @apply absolute right-0 z-10;
+        height: 95px;
+        width: 53%;
         top: 388px;
     }
     .up__shape__wrap .lg__shape {
-        @apply hidden xl:block;
+        @apply hidden xl:block w-full;
     }
     .text__wrap {
         @apply absolute z-20;
-        top: 298px;
+        top: -90px;
         right: 199px;
         width: 496px;
         background-color: #2E2E2E;

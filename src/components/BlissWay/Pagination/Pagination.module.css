@@ -30,7 +30,7 @@
         @apply absolute top-1/2 left-auto transform -translate-y-1/2 rotate-90 z-20;
         height: 62px;
         width: 293px;
-        right: 0;
+        right: 82px;
     }
     .button {
         border-radius: 41px;

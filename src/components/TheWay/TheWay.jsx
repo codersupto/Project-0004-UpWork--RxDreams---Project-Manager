@@ -29,6 +29,7 @@ const TheWay = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
     setIsPlaying(false);
+    window.location.reload();
   };
 
   return (
@@ -83,7 +84,7 @@ const TheWay = () => {
                 />
               </button>
               <video
-                poster={theWayIntroVideoBanner}
+                poster={inView ? theWayIntroVideoBanner : ""}
                 ref={videoRef}
                 className={styles.intro__video}
                 src={inView ? theWayIntroVideo : ""}

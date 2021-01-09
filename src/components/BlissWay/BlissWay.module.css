@@ -1,6 +1,5 @@
 .section {
     @apply relative;
-    /*padding-bottom: 270px;*/
 }
 .text__wrap {
     @apply container;
@@ -43,7 +42,7 @@
 }
 .lg__shape__bottom__right {
     @apply hidden xl:block ml-auto;
-    margin-right: 153px;
+    margin-right: 244px;
 }
 
 /*Screen xl*/

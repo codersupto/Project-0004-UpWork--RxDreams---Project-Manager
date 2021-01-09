@@ -1,7 +1,7 @@
 import React from "react";
 import mobileBottomShape from "../../assets/images/HowBlissway/shapes/mobile-bottom-shape.svg";
 import lgBottomShape from "../../assets/images/HowBlissway/shapes/lg-bottom-shape.svg";
-import howBlisswayIntroVideo from "../../assets/videos/the-way-intro.mp4";
+import howBlisswayIntroVideo from "../../assets/videos/how-blissway-intro.mp4";
 import howBlisswayIntroVideoBanner from "../../assets/images/HowBlissway/intro-video-banner.png";
 import playButtonIcon from "../../assets/images/HowBlissway/shapes/play-button-icon.svg";
 import lgPopUpShape from "../../assets/images/HowBlissway/shapes/lg-video-popup-shape.svg";
@@ -27,6 +27,7 @@ const HowBlissway = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
     setIsPlaying(false);
+    window.location.reload();
   };
 
   return (
