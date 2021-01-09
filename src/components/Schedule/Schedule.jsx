@@ -2,10 +2,9 @@ import React from "react";
 import submitButtonArrow from "../../assets/images/Schedule/shapes/submit-button-arrow.svg";
 import styles from "./Schedule.module.css";
 
-function Schedule() {
+const Schedule = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
   };
   return (
     <section className={styles.section}>
@@ -24,6 +23,6 @@ function Schedule() {
       </div>
     </section>
   );
-}
+};
 
 export default Schedule;

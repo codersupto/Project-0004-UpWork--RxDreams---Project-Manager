@@ -7,8 +7,10 @@ import playButtonIcon from "../../assets/images/HowBlissway/shapes/play-button-i
 import lgPopUpShape from "../../assets/images/HowBlissway/shapes/lg-video-popup-shape.svg";
 import closeButtonIcon from "../../assets/images/HowBlissway/shapes/close-button-icon.svg";
 import styles from "./HowBlissway.module.css";
+import useInterSectionObserver from "../../utils/useInterSectionObserver";
 
-function HowBlissway(props) {
+const HowBlissway = () => {
+  const [ref, inView] = useInterSectionObserver();
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [state] = React.useState({
     title: "How BLISSWAY",
@@ -28,7 +30,7 @@ function HowBlissway(props) {
   };
 
   return (
-    <section className={styles.section}>
+    <section ref={ref} className={styles.section}>
       <div className={styles.video__wrap}>
         <button
           onClick={handlePlayVideo}
@@ -36,7 +38,7 @@ function HowBlissway(props) {
         >
           <img
             className={styles.video__play__button__icon}
-            src={playButtonIcon}
+            src={inView ? playButtonIcon : ""}
             alt=""
           />
         </button>
@@ -48,7 +50,7 @@ function HowBlissway(props) {
           <div className="container relative h-full flex justify-center items-center">
             <img
               className={styles.lg__popup__shape}
-              src={lgPopUpShape}
+              src={inView ? lgPopUpShape : ""}
               alt=""
             />
             <div className={styles.video__inner_wrap__with__close_button}>
@@ -62,7 +64,7 @@ function HowBlissway(props) {
               >
                 <img
                   className={styles.video__close__button__icon}
-                  src={closeButtonIcon}
+                  src={inView ? closeButtonIcon : ""}
                   alt=""
                 />
               </button>
@@ -70,7 +72,7 @@ function HowBlissway(props) {
                 poster={howBlisswayIntroVideoBanner}
                 ref={videoRef}
                 className={styles.intro__video}
-                src={howBlisswayIntroVideo}
+                src={inView ? howBlisswayIntroVideo : ""}
               />
             </div>
           </div>
@@ -79,13 +81,17 @@ function HowBlissway(props) {
       <div className={styles.bottom__shape__wrap}>
         <img
           className={styles.mobile__bottom__shape}
-          src={mobileBottomShape}
+          src={inView ? mobileBottomShape : ""}
           alt=""
         />
-        <img className={styles.lg__bottom__shape} src={lgBottomShape} alt="" />
+        <img
+          className={styles.lg__bottom__shape}
+          src={inView ? lgBottomShape : ""}
+          alt=""
+        />
       </div>
     </section>
   );
-}
+};
 
 export default HowBlissway;

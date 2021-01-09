@@ -9,6 +9,9 @@
     @apply ml-auto mr-0 xl:hidden;
     width: 343px;
 }
+.up__shape__wrap .lg__shape{
+    @apply hidden xl:block;
+}
 
 
 
@@ -44,6 +47,9 @@
     @apply xl:hidden absolute left-0;
     width: 113px;
     top: -16px;
+}
+.lg__img__up__shape {
+    @apply hidden;
 }
 
 /*xl screen*/
@@ -92,7 +98,7 @@
         @apply h-full;
     }
     .lg__img__up__shape {
-        @apply hidden xl:block absolute left-0 top-0;
+        @apply xl:block absolute left-0 top-0;
         width: 495px;
         margin-left: -166px;
         margin-top: -33px;

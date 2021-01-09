@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "../../assets/images/Footer/logo/logo.svg";
 import styles from "./Footer.module.css";
+import useInterSectionObserver from "../../utils/useInterSectionObserver";
 
-function Footer() {
+const Footer = () => {
+  const [ref, inView] = useInterSectionObserver();
   return (
     <footer className={styles.section}>
       <div className={styles.email__sec}>
@@ -10,7 +12,12 @@ function Footer() {
         <p>hello@blissway.com</p>
       </div>
       <div className={styles.logo__sec}>
-        <img className={styles.logo__img} src={logo} alt="" />
+        <img
+          ref={ref}
+          className={styles.logo__img}
+          src={inView ? logo : ""}
+          alt=""
+        />
         <h1 className={styles.address}>Redondo Beach, CA Denver, CO</h1>
       </div>
       <div className={styles.copyright__sec}>
@@ -18,6 +25,6 @@ function Footer() {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
