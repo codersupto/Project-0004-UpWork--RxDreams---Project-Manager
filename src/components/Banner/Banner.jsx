@@ -38,15 +38,15 @@ const Banner = (props) => {
           <img
             ref={ref}
             src={inView ? scrollDown : ""}
-            className="animate-bounce"
-            alt="Scroll Down"
+            className=""
+            alt="scroll down"
           />
         </button>
         <span className={styles.scroll__down__icon__text_first}>
-          Scroll Down
+          scroll down
         </span>
         <span className={styles.scroll__down__icon__text_last}>
-          To learn more
+          to learn more
         </span>
       </div>
     </section>

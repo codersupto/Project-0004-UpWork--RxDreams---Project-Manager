@@ -1,17 +1,17 @@
 .banner {
-    height: 811px;
+    height: 740px;
 }
 
 .banner__text {
     @apply mx-auto;
     height: 28px;
     margin-top: 177px;
-    margin-bottom: 106px;
+    margin-bottom: 81px;
 }
 
 .mobile__banner__solving__text {
     @apply w-full h-auto lg:hidden;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
 }
 
 .desktop__banner__solving__text {
@@ -22,22 +22,21 @@
     @apply mx-auto text-white text-center;
     width: 152px;
     height: 80px;
-    font-family: 'Lato', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    line-height: 37px;
 }
 
 .scroll__down__sec {
     @apply mx-auto text-center flex flex-wrap justify-center;
-    margin-top: 169px;
+    margin-top: 166px;
     width: 90px;
     height: 102px;
 }
 
 .scroll__down__btn {
     @apply mx-auto cursor-pointer focus:outline-none;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    margin-bottom: 13px;
 }
 
 .scroll__down__icon__text_first {
@@ -46,9 +45,11 @@
 }
 
 .scroll__down__icon__text_last {
-    font-weight: 300;
     color: #B2B2B2;
     font-size: 15px;
+    font-weight: 300;
+    margin-top: -4px;
+    letter-spacing: 0.2px;
 }
 
 /*Desktop Screen*/

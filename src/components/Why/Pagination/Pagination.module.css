@@ -1,13 +1,14 @@
 .pagination {
     @apply flex justify-between items-center mx-auto;
-    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
     background-color: #12739B;
-    width: 252px;
+    width: 250px;
     height: 28px;
     border-radius: 30px;
-    transform: translateY(-50%);
+    transform: translate(-3px, -50%);
+
+
 }
 
 .button {

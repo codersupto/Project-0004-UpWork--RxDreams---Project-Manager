@@ -1,5 +1,6 @@
 .section {
     @apply container;
+    margin-top: 21px;
 }
 .mobile__up__shape {
     @apply h-full relative mx-auto xl:hidden;
@@ -56,7 +57,7 @@
 .section__text__wrap p {
     @apply font-bold;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 25px;
     color: #A8A8A8;
 }
 
@@ -65,11 +66,11 @@
 }
 /*bottom shape*/
 .bottom__shape__wrap {
-    height: 338px;
+    height: 272px;
 }
 .mobile__bottom__shape {
     @apply h-full relative mx-auto z-10 xl:hidden;
-    margin-top: -22px;
+    margin-top: -11px;
 }
 .lg__bottom__shape {
     @apply hidden xl:block;

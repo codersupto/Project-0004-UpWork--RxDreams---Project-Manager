@@ -5,11 +5,12 @@
 .heading {
     @apply text-white font-bold mt-4 xl:mt-0;
     font-size: 22px;
-    line-height: 36px;
+    line-height: 28px;
     margin-bottom: 21px;
 }
 ul.list__items {
-    margin-left: 14px;
+    margin-left: 9px;
+    margin-top: -3px;
 }
 li.list__item {
     @apply font-light;

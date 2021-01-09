@@ -1,6 +1,5 @@
 .section {
     @apply text-white relative;
-    padding-top: 103px;
     margin-bottom: 100px;
 }
 
@@ -19,6 +18,7 @@
 
 
 .text__wrap {
+    margin-top: 36px;
 }
 .text__heading {
     @apply font-black text-white;
@@ -26,11 +26,13 @@
     font-size: 44px;
 }
 .text__paragraph {
+    color: #A8A8A8;
     line-height: 26px;
     padding-left: 35px;
     font-size: 22px;
-    color: #A8A8A8;
-    width: 273px;
+    width: 330px;
+    margin-top: -4px;
+
 }
 
 
@@ -50,6 +52,8 @@
     @apply xl:hidden absolute left-0;
     width: 113px;
     top: -16px;
+    height: 396px;
+    margin-left: -5px;
 }
 .lg__img__up__shape {
     @apply hidden;

@@ -1,6 +1,6 @@
 .section {
     @apply container;
-    margin-top: 206px;
+    margin-top: 204px;
 }
 .email__sec {
     @apply text-center;

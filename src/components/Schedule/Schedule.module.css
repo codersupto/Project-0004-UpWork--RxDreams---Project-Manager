@@ -4,14 +4,16 @@
 .inner__wrap {
     @apply text-center mx-auto;
     width: 337px;
-    padding: 49px 19px 20px;
+    padding: 50px 20px 19px;
     border-radius: 20px;
     background-color: #2E2E2E;
 }
 .heading {
     @apply text-white font-black;
     line-height: 24px;
-    margin-bottom: 41px;
+    letter-spacing: 2px;
+    margin-left: 3px;
+    margin-bottom: 31px;
 }
 .color__heading {
     color: #21DEDE;
@@ -21,20 +23,23 @@
     width: 259px;
 }
 .form input {
-    @apply block w-full text-center text-white bg-transparent px-4 py-5 block border-0 border-b-2 focus:outline-none;
+    @apply block w-full text-center text-white bg-transparent border-0 border-b-2 focus:outline-none;
+    padding: 6px 1rem;
 }
 .form input::placeholder {
     @apply font-light;
     line-height: 36px;
 }
 .form button {
-    @apply font-medium;
-    margin-top: 35px;
+    @apply font-medium uppercase;
+    margin-top: 32px;
     line-height: 19px;
     color: #21DEDE;
+    margin-left: 4px;
 }
 .form button .arrow {
-    @apply ml-2 inline-block;
+    @apply inline-block;
+    margin-left: 3px;
 }
 
 /**/

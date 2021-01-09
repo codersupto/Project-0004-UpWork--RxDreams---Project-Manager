@@ -1,17 +1,16 @@
 .header {
-    @apply fixed left-0 top-0 right-0 bg-transparent z-50;
+    @apply fixed left-0 top-0 right-0 bg-transparent z-50 text-center;
 }
 .contact__btn {
-    @apply flex justify-center items-center uppercase mx-auto;
-    margin-top: 23px;
-    background-color: #272727;
-    width: 84px;
-    height: 22px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
+    @apply font-bold uppercase inline-block;
     font-size: 12px;
+    background-color: #272727;
+    line-height: 16px;
+    margin-top: 23px;
     color: #C9C9C9;
     border-radius: 11px;
+    padding: 4px 10px;
+    letter-spacing: 1.105px;
 }
 
 @screen xl {

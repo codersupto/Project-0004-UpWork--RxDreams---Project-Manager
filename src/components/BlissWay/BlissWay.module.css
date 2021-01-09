@@ -3,7 +3,7 @@
 }
 .text__wrap {
     @apply container;
-    margin-bottom: 157px;
+    margin-bottom: 40px;
     margin-top: -30px;
 }
 .main__heading {
@@ -16,18 +16,22 @@
     font-size: 24px;
     line-height: 30px;
     margin-bottom: 11px;
+    margin-top: 7px;
 }
 .description {
     @apply px-8;
     line-height: 20px;
     color: #A8A8A8;
+    width: 340px;
 }
 .middle__shape__wrap {
     @apply container mx-auto;
+    z-index: 20;
+    position: relative;
 }
 .mobile__shape__left__middle {
-    @apply xl:hidden ml-4;
-    /*left: 14px;*/
+    @apply xl:hidden;
+    margin-left: 14px;
 }
 .lg__shape__left__middle {
     @apply hidden xl:block ;
@@ -35,6 +39,7 @@
 }
 .bottom__shape__wrap {
     @apply container relative;
+    margin-top: 50px;
 }
 .mobile__shape__bottom__right {
     @apply xl:hidden ml-auto;

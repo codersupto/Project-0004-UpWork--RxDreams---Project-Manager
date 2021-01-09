@@ -13,7 +13,7 @@
 .button {
     @apply bg-transparent inline-block transition-all focus:outline-none focus:border-opacity-0 hover:text-white;
     color: #1BA5DE;
-    padding: 6px 19px;
+    padding: 6px 21px;
     line-height: 20px;
     border-radius: 41px;
 }

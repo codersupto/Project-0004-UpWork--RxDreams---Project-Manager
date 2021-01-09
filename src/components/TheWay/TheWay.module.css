@@ -2,11 +2,11 @@
     @apply container;
 }
 .up__shape__wrap {
-    height: 225px;
+    height: 261px;
 }
 .mobile__up__shape {
     @apply h-full relative mx-auto xl:hidden;
-    margin-top: -58px;
+    margin-top: -60px;
 }
 .lg__up__shape {
     @apply hidden;
@@ -15,6 +15,7 @@
 .video__wrap {
     @apply text-center relative;
     padding: 0 19px;
+    margin-top: 22px;
 }
 
 .video__play__button {
@@ -54,7 +55,7 @@
 .section__text__wrap h1 {
     @apply font-black text-white;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 47px;
 }
 .section__text__wrap p {
     @apply font-bold;
