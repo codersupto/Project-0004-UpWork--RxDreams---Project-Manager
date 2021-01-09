@@ -54,13 +54,14 @@
 /*Desktop Screen*/
 @screen xl {
     .banner {
-        height: 767px;
+        @apply h-screen;
+        padding-top: 175px;
     }
 
     .banner__text {
+        @apply mt-0;
         width: 260px;
         height: 36px;
-        margin-top: 175px;
         margin-bottom: 43px;
     }
 

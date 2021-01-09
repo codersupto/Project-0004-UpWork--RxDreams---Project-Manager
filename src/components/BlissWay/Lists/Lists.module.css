@@ -3,7 +3,7 @@
 }
 
 .heading {
-    @apply text-white font-bold;
+    @apply text-white font-bold mt-4 xl:mt-0;
     font-size: 22px;
     line-height: 36px;
     margin-bottom: 21px;

@@ -35,10 +35,16 @@
     @apply relative;
     height: 200px;
 }
+.bg__img__wrap:before {
+    @apply block absolute left-0 top-0 right-0;
+    content: '';
+    height: 25%;
+    background-image: linear-gradient(to top, rgba(13, 13, 13, 0), rgba(13, 13, 13, 1));
+}
 .bg__img__wrap:after {
     @apply block absolute left-0 bottom-0 right-0;
     content: '';
-    height: 80%;
+    height: 25%;
     background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0), rgba(13, 13, 13, 1));
 }
 .bg__image {

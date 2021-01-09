@@ -104,7 +104,7 @@ const BlissWay = () => {
       <div className="lg__control__wrap relative">
         <Item sectionInView={inView} item={selectedItem} />
         <div className="xl:absolute xl:inset-0">
-          <div className="xl:container relative h-full">
+          <div className="container relative h-full">
             <Pagination
               selectedItem={selectedItem}
               items={items}

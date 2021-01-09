@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./Banner.module.css";
-import bannerText from "./../../assets/images/svgs/mobile-banner-text.svg";
-import mobileBannerSolvingText from "../../assets/images/svgs/mobile-banner-solving-text.svg";
-import desktopBannerSolvingText from "../../assets/images/svgs/desktop-banner-solving-text.svg";
-import scrollDown from "../../assets/images/svgs/scroll-down.svg";
+import bannerText from "../../assets/images/Banner/shapes/mobile-banner-text.svg";
+import mobileBannerSolvingText from "../../assets/images/Banner/shapes/mobile-banner-solving-text.svg";
+import desktopBannerSolvingText from "../../assets/images/Banner/shapes/desktop-banner-solving-text.svg";
+import scrollDown from "../../assets/images/Banner/shapes/scroll-down.svg";
 import useInterSectionObserver from "../../utils/useInterSectionObserver";
+import styles from "./Banner.module.css";
 
 const Banner = (props) => {
   const [ref, inView] = useInterSectionObserver();

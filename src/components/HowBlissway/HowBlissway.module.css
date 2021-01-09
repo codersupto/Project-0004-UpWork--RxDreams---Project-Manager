@@ -79,11 +79,6 @@
 .video__inner_wrap__open .intro__video {
     opacity: 100%;
 }
-.video__inner_wrap__open .lg__popup__shape {
-    @apply block absolute top-0 h-full;
-    left: 232px;
-}
-
 
 .video__inner_wrap__open .video__inner_wrap__with__close_button {
     @apply relative;
@@ -146,6 +141,10 @@
     }
 
     /*open state*/
+    .video__inner_wrap__open .lg__popup__shape {
+        @apply block absolute top-0 h-full;
+        left: 232px;
+    }
     .video__inner_wrap__open .video__inner_wrap__with__close_button {
         @apply pl-0;
         width: 968px;

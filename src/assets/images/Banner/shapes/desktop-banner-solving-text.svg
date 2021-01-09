@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1366" height="216" viewBox="0 0 1366 216">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_65" data-name="Rectangle 65" width="1366" height="216" transform="translate(0 237)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.105" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d1001d"/>
+      <stop offset="0.427" stop-color="#002e6c"/>
+      <stop offset="0.608" stop-color="#004c8d"/>
+      <stop offset="0.729" stop-color="#0065a8"/>
+      <stop offset="0.838" stop-color="#0078bd"/>
+      <stop offset="1" stop-color="#0091d8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#661745"/>
+      <stop offset="1" stop-color="#1d2760"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#003b7a"/>
+      <stop offset="1" stop-color="#004787"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#015596"/>
+      <stop offset="1" stop-color="#0263a6"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0 -237)" clip-path="url(#clip-path)">
+    <g id="Group_20" data-name="Group 20" transform="translate(0 -33)">
+      <line id="Line_25" data-name="Line 25" x2="332" transform="translate(-66.5 444.5)" fill="none" stroke="#d6d6d6" stroke-linecap="round" stroke-width="15" opacity="0.368"/>
+      <line id="Line_29" data-name="Line 29" x2="154" transform="translate(1087.5 444.5)" fill="none" stroke="#d6d6d6" stroke-linecap="round" stroke-width="16" opacity="0.368"/>
+      <line id="Line_30" data-name="Line 30" x2="179" transform="translate(1212.5 362.5)" fill="none" stroke="#d6d6d6" stroke-linecap="round" stroke-width="16" opacity="0.368"/>
+      <g id="Group_19" data-name="Group 19">
+        <rect id="Rectangle_62" data-name="Rectangle 62" width="787" height="15" transform="translate(290 396)" fill="url(#linear-gradient)"/>
+        <text id="Solving_" data-name="Solving " transform="translate(690.5 447.5)" fill="#0d0d0d" stroke="#fff" stroke-linecap="round" stroke-width="3" font-size="180" font-family="Lato-Black, Lato" font-weight="800"><tspan x="-318.375" y="0">Solving </tspan></text>
+        <rect id="Rectangle_48" data-name="Rectangle 48" width="103" height="15" transform="translate(527 396)" fill="url(#linear-gradient-2)"/>
+        <rect id="Rectangle_49" data-name="Rectangle 49" width="42" height="15" transform="translate(729 396)" fill="url(#linear-gradient-3)"/>
+        <rect id="Rectangle_50" data-name="Rectangle 50" width="41" height="15" transform="translate(836 396)" fill="url(#linear-gradient-4)"/>
+      </g>
+      <line id="Line_26" data-name="Line 26" x2="287" transform="translate(-173.5 362.5)" fill="none" stroke="#d6d6d6" stroke-linecap="round" stroke-width="15" opacity="0.368"/>
+      <rect id="Rectangle_60" data-name="Rectangle 60" width="503" height="15" transform="translate(-213 396)" fill="#d1001d"/>
+      <rect id="Rectangle_61" data-name="Rectangle 61" width="481" height="15" transform="translate(1077 396)" fill="#0a91d8"/>
+    </g>
+  </g>
+</svg>
