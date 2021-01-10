@@ -29,22 +29,37 @@
 }
 
 .lg__shape__bottom__right {
-    @apply hidden xl:block absolute top-4 right-0 bottom-0 h-full;
+    @apply hidden xl:block absolute right-0 bottom-0 h-full;
+    height: 100%;
+    top: 72px;
+    transform: scale(1.058);
+    transform-origin: right;
 }
 
 /*desktop Screen*/
 @screen xl {
     .section {
         padding-bottom: 546px;
+        margin-top: 420px;
     }
     .container {
         max-width: 1231px;
     }
+    .heading {
+        font-size: 38px;
+        line-height: 51px;
+        margin-bottom: 5px;
+    }
+    .paragraph {
+        @apply w-full;
+        font-size: 17.8px;
+    }
     .text {
-        margin-left: 196px;
+        margin-left: 213px;
     }
     .i__and_p__wrap {
         @apply mx-auto relative;
         width: 820px;
+        transform: translate(-7px, 36px);
     }
 }

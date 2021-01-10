@@ -31,11 +31,18 @@ img.list__item__left__arrow {
         padding-left: 55px;
         width: 534px;
         margin-left: auto;
-        margin-right: 216px;
+        margin-right: 152px;
         background-color: #000000db;
     }
-    .li.list__item {
+    ul.list__items {
+        margin-left: 10px;
+        margin-top: 38px;
+    }
+    li.list__item {
+        font-weight: 300;
+        line-height: 22px;
+        color: #A2A2A2;
+        margin: 20px 0;
         font-size: 23px;
-        line-height: 32px;
     }
 }

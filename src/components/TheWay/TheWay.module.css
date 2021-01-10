@@ -108,29 +108,39 @@
     }
     .lg__up__shape {
         @apply lg:block;
-        margin-top: 43px;
+        margin-top: 112px;
         width: 15px;
         height: 446px;
+        margin-left: 290px;
     }
 
     .video__wrap {
         @apply p-0;
-        margin-left: 237px;
+        margin-left: 233px;
+        margin-top: -4px;
+    }
+    .intro__video {
+        border-radius: 44px;
     }
     .video__play__button {
-        @apply left-0 top-1/2 translate-x-0 -translate-y-1/2;
+        @apply translate-x-0 -translate-y-1/2;
         width: 132px;
         height: 132px;
+        left: -1px;
+        top: 48%;
     }
     .video__inner_wrap__with__close_button {
         @apply mx-0 object-fill;
-        padding-left: 253px;
-        width: 945px;
-        height: 364px;
+        padding-left: 133px;
+        width: 765px;
+        height: 367px;
+        margin-top: 6px;
     }
     .section__text__wrap {
         @apply items-end;
         width: 509px;
+        left: -187px;
+        top: -13px;
     }
     .section__text__wrap h1 {
         font-size: 78px;
@@ -142,13 +152,13 @@
     }
 
     .bottom__shape__wrap {
-        margin-top: -120px;
-        height: 671px;
+        margin-top: -128px;
+        height: 683px;
     }
     .lg__bottom__shape {
         @apply h-full;
         width: 97px;
-        margin-left: 257px;
+        margin-left: 250px;
     }
 
     /*open state*/

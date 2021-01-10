@@ -40,12 +40,16 @@
 }
 
 @screen xl {
+    .section {
+        margin-top: 527px;
+    }
     .email__sec {
         font-size: 28px;
         line-height: 34px;
+        transform: translateX(-2px);
     }
     .logo__sec {
-        margin: 544px 115px 57px;
+        margin: 174px 115px 57px;
     }
     .logo__sec .logo__img {
         @apply mx-0;
@@ -53,6 +57,9 @@
     .logo__sec .address {
         @apply mx-0 text-left;
         width: 195px;
+        line-height: 28px;
+        letter-spacing: 2px;
+        transform: translateY(-3px);
     }
     .copyright__sec {
         margin-left: 115px;

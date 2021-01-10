@@ -107,10 +107,20 @@
         @apply p-0;
         margin-left: 237px;
     }
+    .intro__video {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+        opacity: 33%;
+        width: 631px;
+        transform: translate(-32px, 9px);
+    }
     .video__play__button {
-        @apply left-0 top-1/2 translate-x-0 -translate-y-1/2;
+        @apply translate-x-0 -translate-y-1/2;
         width: 132px;
         height: 132px;
+        left: -5px;
+        top: 50%;
     }
     .video__inner_wrap__with__close_button {
         @apply mx-0 object-fill;
@@ -121,6 +131,8 @@
     .section__text__wrap {
         @apply items-end;
         width: 656px;
+        top: -7px;
+        left: -15px;
     }
     .section__text__wrap h1 {
         font-size: 78px;
@@ -129,16 +141,18 @@
     .section__text__wrap p {
         font-size: 28px;
         line-height: 34px;
+        transform: translateX(-350px);
     }
 
     .bottom__shape__wrap {
         margin-top: -120px;
-        height: 671px;
+        height: 713px;
+        position: relative;
+        z-index: 10;
     }
     .lg__bottom__shape {
         @apply h-full;
-        width: 107px;
-        margin-left: 298px;
+        margin-left: 290px;
     }
 
     /*open state*/

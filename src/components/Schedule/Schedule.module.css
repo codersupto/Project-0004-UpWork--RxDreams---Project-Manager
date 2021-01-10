@@ -50,23 +50,34 @@
     .inner__wrap {
         width: 651px;
         padding: 101px 19px 112px;
+        transform: translate(0px, -17px);
+        border-radius: 40px;
     }
     .heading {
         font-size: 28px;
         line-height: 34px;
         margin-bottom: 54px;
+        letter-spacing: 0;
+        margin-top: 2px;
     }
     .form {
         @apply relative;
         width: 454px;
     }
     .form input {
-        @apply text-left pr-24;
+        @apply text-left;
+        padding: 0px 10px;
+        @apply  pr-24;
+        font-size: 21px;
+        line-height: 39px;
     }
     .form button {
-        @apply absolute top-1/2 right-0 mt-0 transform -translate-y-1/2;
+        @apply absolute mt-0 transform -translate-y-1/2;
         font-size: 20px;
         line-height: 24px;
         color: #21DEDE;
+        right: 7px;
+        top: 38%;
+        letter-spacing: 1px;
     }
 }

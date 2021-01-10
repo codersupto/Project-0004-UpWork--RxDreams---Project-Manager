@@ -63,13 +63,17 @@
         @apply mt-0;
         width: 260px;
         height: 36px;
-        margin-bottom: 43px;
+        margin-bottom: 59px;
     }
 
     .normal__text {
         width: auto;
         font-size: 45px;
-        margin-top: -67px;
-        margin-left: -102px;
+        margin-top: -20px;
+        margin-left: -38px;
     }
+    .scroll__down__sec {
+         margin-top: 66px;
+     }
+
 }

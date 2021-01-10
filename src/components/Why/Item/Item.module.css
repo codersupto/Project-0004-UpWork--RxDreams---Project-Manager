@@ -37,9 +37,11 @@
         width: 167px;
         height: 167px;
         margin-right: 54px;
+        transform: translate(12px, 15px);
     }
     .text__wrap {
         @apply m-0 text-left;
+        transform: translate(17px, 13px);
     }
     .heading {
         line-height: 36px;

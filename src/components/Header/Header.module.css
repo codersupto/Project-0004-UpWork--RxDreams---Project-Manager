@@ -1,5 +1,5 @@
 .header {
-    @apply fixed left-0 top-0 right-0 bg-transparent z-50 text-center;
+    @apply fixed left-0 top-0 right-0 bg-transparent z-50 text-center xl:text-right;
 }
 .contact__btn {
     @apply font-bold uppercase inline-block;
@@ -18,5 +18,6 @@
         @apply ml-auto;
         margin-top: 34px;
         margin-right: 34px;
+        color: #C9C9C9;
     }
 }

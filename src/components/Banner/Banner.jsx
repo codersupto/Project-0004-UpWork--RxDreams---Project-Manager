@@ -38,7 +38,7 @@ const Banner = (props) => {
           <img
             ref={ref}
             src={inView ? scrollDown : ""}
-            className=""
+            className="animate-bounce"
             alt="scroll down"
           />
         </button>

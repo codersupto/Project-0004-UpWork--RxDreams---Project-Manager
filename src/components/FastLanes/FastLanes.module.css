@@ -62,22 +62,20 @@
 /*xl screen*/
 @screen xl {
     .section {
-        padding-top: 388px;
-        /*@apply mx-auto relative;*/
-        /*width: 898px;*/
+        padding-top: 127px;
     }
     .up__shape__wrap {
         @apply absolute right-0 z-10;
         height: 95px;
-        width: 53%;
-        top: 388px;
+        width: 56%;
+        top: 118px;
     }
     .up__shape__wrap .lg__shape {
         @apply hidden xl:block w-full;
     }
     .text__wrap {
         @apply absolute z-20;
-        top: -90px;
+        top: -126px;
         right: 199px;
         width: 496px;
         background-color: #2E2E2E;
@@ -96,6 +94,7 @@
         font-size: 28px;
         width: 394px;
         line-height: 37px;
+        margin-top: 0;
     }
 
     .img__wrap {
@@ -103,12 +102,14 @@
         margin: 0 234px;
     }
     .img {
-        @apply h-full;
+        height: 479px;
+        border-radius: 38px;
     }
     .lg__img__up__shape {
         @apply xl:block absolute left-0 top-0;
         width: 495px;
         margin-left: -166px;
-        margin-top: -33px;
+        height: 1050px;
+        margin-top: -66px;
     }
 }

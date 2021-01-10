@@ -35,8 +35,12 @@
     }
     .button {
         border-radius: 41px;
-        padding: 10px 37px;
+        padding: 15px 31px;
         font-size: 34px;
         line-height: 53px;
+        transform: rotate(-90deg);
+    }
+    .active {
+        padding: 25px 31px;
     }
 }

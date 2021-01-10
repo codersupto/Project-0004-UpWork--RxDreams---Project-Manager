@@ -27,15 +27,20 @@
 /*Laptop Screen*/
 @screen xl {
     .pagination {
-        @apply absolute top-1/2 left-auto transform -translate-y-1/2 rotate-90 z-20;
+        @apply absolute left-auto transform -translate-y-1/2 rotate-90 z-20;
+        top: 57%;
         height: 62px;
         width: 293px;
-        right: 82px;
+        right: 13px;
+
     }
     .button {
         border-radius: 41px;
         padding: 10px 37px;
         font-size: 34px;
         line-height: 53px;
+    }
+    .active {
+        padding: 14px 45px;
     }
 }

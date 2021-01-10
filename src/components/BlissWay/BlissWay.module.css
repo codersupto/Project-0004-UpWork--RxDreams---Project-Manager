@@ -34,8 +34,10 @@
     margin-left: 14px;
 }
 .lg__shape__left__middle {
-    @apply hidden xl:block ;
-    margin-left: 224px;
+    @apply hidden xl:block;
+    height: 169px;
+    margin-left: 285px;
+    margin-top: -12px;
 }
 .bottom__shape__wrap {
     @apply container relative;
@@ -47,7 +49,7 @@
 }
 .lg__shape__bottom__right {
     @apply hidden xl:block ml-auto;
-    margin-right: 244px;
+    margin-right: 220px;
 }
 
 /*Screen xl*/
@@ -60,21 +62,29 @@
         font-size: 97px;
         line-height: 117px;
         padding-left: 183px;
+        margin-left: 61px;
+        margin-top: 69px;
+
+    }
+    .lg__control__wrap {
+        margin-top: 38px;
     }
     .sub__heading {
         width: 715px;
         font-size: 38px;
         line-height: 50px;
-        padding-left: 183px;
+        padding-left: 246px;
+        padding-top: 4px;
     }
     .description {
         width: 715px;
         font-size: 28px;
         line-height: 37px;
-        padding-left: 183px;
+        padding-left: 244px;
+        padding-top: 8px;
     }
     .middle__shape__wrap {
-        margin-bottom: 29px;
+        margin-bottom: 39px;
     }
     .bottom__shape__wrap {
         margin-top: 67px;

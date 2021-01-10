@@ -56,6 +56,9 @@
 
 /**/
 @screen xl {
+    .section {
+        margin-top: -27px;
+    }
     .bg__img__wrap {
         height: 400px;
     }
@@ -66,5 +69,9 @@
     }
     .list__items {
         margin: 0 492px;
+    }
+    .lg__left__shape {
+        left: 250px;
+        top: 14px;
     }
 }
