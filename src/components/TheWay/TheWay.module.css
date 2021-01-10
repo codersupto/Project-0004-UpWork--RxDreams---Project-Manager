@@ -26,6 +26,11 @@
 .video__play__button__icon {
     @apply w-full h-full;
 }
+.video__wrap__inner {
+    @apply object-cover;
+    border-radius: 22px;
+    /*opacity: 33%;*/
+}
 .intro__video {
     @apply w-full h-full object-cover;
     border-radius: 20px;
@@ -87,9 +92,6 @@
 .video__inner_wrap__open .video__inner_wrap__with__close_button {
     @apply relative;
 }
-.video__inner_wrap__open .video__inner_wrap__with__close_button .intro__video {
-    /*border-radius: 20px;*/
-}
 
 .video__inner_wrap__open .video__inner_wrap__with__close_button .video__close__button {
     @apply absolute right-0 top-0 w-8 h-8 transform translate-x-1/2 -translate-y-1/2 block;
@@ -119,8 +121,20 @@
         margin-left: 233px;
         margin-top: -4px;
     }
-    .intro__video {
+
+    .video__wrap__inner {
         border-radius: 44px;
+        width: 632px;
+        transform: translate(0px, 3px);
+        height: 364px;
+    }
+    .intro__video {
+        transform: translate(0);
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+        opacity: 33%;
+        width: 100%;
     }
     .video__play__button {
         @apply translate-x-0 -translate-y-1/2;
@@ -166,12 +180,16 @@
         @apply block absolute top-0 h-full;
         left: 232px;
     }
+    .video__inner_wrap__open .video__wrap__inner {
+        @apply relative w-auto h-auto transform translate-x-0 translate-y-0 z-10;
+        background-image: none;
+    }
     .video__inner_wrap__open .video__inner_wrap__with__close_button {
         @apply pl-0;
         width: 968px;
         height: 558px;
     }
     .video__inner_wrap__open .video__inner_wrap__with__close_button .video__close__button {
-        @apply w-16 h-16;
+        @apply w-16 h-16 z-20;
     }
 }

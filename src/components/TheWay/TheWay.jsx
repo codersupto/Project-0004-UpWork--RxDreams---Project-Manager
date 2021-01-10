@@ -4,7 +4,7 @@ import lgUpShape from "../../assets/images/TheWay/shapes/lg-up-shape.svg";
 import mobileBottomShape from "../../assets/images/TheWay/shapes/mobile-bottom-shape.svg";
 import lgBottomShape from "../../assets/images/TheWay/shapes/lg-bottom-shape.svg";
 import theWayIntroVideo from "../../assets/videos/the-way-intro.mp4";
-import theWayIntroVideoBanner from "../../assets/images/TheWay/intro-video-banner.png";
+import theWayIntroVideoBanner from "../../assets/images/TheWay/intro-video-banner.jpg";
 import playButtonIcon from "../../assets/images/TheWay/shapes/play-button-icon.svg";
 import lgPopUpShape from "../../assets/images/TheWay/shapes/lg-video-popup-shape.svg";
 import closeButtonIcon from "../../assets/images/TheWay/shapes/close-button-icon.svg";
@@ -29,7 +29,6 @@ const TheWay = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
     setIsPlaying(false);
-    window.location.reload();
   };
 
   return (
@@ -83,12 +82,20 @@ const TheWay = () => {
                   alt=""
                 />
               </button>
-              <video
-                poster={inView ? theWayIntroVideoBanner : ""}
-                ref={videoRef}
-                className={styles.intro__video}
-                src={inView ? theWayIntroVideo : ""}
-              />
+              <div
+                className={styles.video__wrap__inner}
+                style={{
+                  backgroundImage: `url(${
+                    inView ? theWayIntroVideoBanner : ""
+                  })`,
+                }}
+              >
+                <video
+                  ref={videoRef}
+                  className={styles.intro__video}
+                  src={inView ? theWayIntroVideo : ""}
+                />
+              </div>
             </div>
           </div>
         </div>

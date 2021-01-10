@@ -2,7 +2,7 @@ import React from "react";
 import mobileBottomShape from "../../assets/images/HowBlissway/shapes/mobile-bottom-shape.svg";
 import lgBottomShape from "../../assets/images/HowBlissway/shapes/lg-bottom-shape.svg";
 import howBlisswayIntroVideo from "../../assets/videos/how-blissway-intro.mp4";
-import howBlisswayIntroVideoBanner from "../../assets/images/HowBlissway/intro-video-banner.png";
+import howBlisswayIntroVideoBanner from "../../assets/images/HowBlissway/intro-video-banner.jpg";
 import playButtonIcon from "../../assets/images/HowBlissway/shapes/play-button-icon.svg";
 import lgPopUpShape from "../../assets/images/HowBlissway/shapes/lg-video-popup-shape.svg";
 import closeButtonIcon from "../../assets/images/HowBlissway/shapes/close-button-icon.svg";
@@ -27,7 +27,6 @@ const HowBlissway = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
     setIsPlaying(false);
-    window.location.reload();
   };
 
   return (
@@ -69,12 +68,20 @@ const HowBlissway = () => {
                   alt=""
                 />
               </button>
-              <video
-                poster={howBlisswayIntroVideoBanner}
-                ref={videoRef}
-                className={styles.intro__video}
-                src={inView ? howBlisswayIntroVideo : ""}
-              />
+              <div
+                className={styles.video__wrap__inner}
+                style={{
+                  backgroundImage: `url(${
+                    inView ? howBlisswayIntroVideoBanner : ""
+                  })`,
+                }}
+              >
+                <video
+                  ref={videoRef}
+                  className={styles.intro__video}
+                  src={inView ? howBlisswayIntroVideo : ""}
+                />
+              </div>
             </div>
           </div>
         </div>
