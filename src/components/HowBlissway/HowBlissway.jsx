@@ -1,15 +1,18 @@
 import React from "react";
 import mobileBottomShape from "../../assets/images/HowBlissway/shapes/mobile-bottom-shape.svg";
 import lgBottomShape from "../../assets/images/HowBlissway/shapes/lg-bottom-shape.svg";
-import howBlisswayIntroVideo from "../../assets/videos/how-blissway-intro.mp4";
+import howBlisswayIntroVideoLg from "../../assets/videos/HowBlissway/how-blissway-intro-video-lg.mp4";
+import howBlisswayIntroVideoMobile from "../../assets/videos/HowBlissway/how-blissway-intro-video-mobile.mp4";
 import howBlisswayIntroVideoBanner from "../../assets/images/HowBlissway/intro-video-banner.jpg";
 import playButtonIcon from "../../assets/images/HowBlissway/shapes/play-button-icon.svg";
 import lgPopUpShape from "../../assets/images/HowBlissway/shapes/lg-video-popup-shape.svg";
 import closeButtonIcon from "../../assets/images/HowBlissway/shapes/close-button-icon.svg";
 import styles from "./HowBlissway.module.css";
 import useInterSectionObserver from "../../utils/useInterSectionObserver";
+import useCurrentWidth from "../../utils/useCurrentWidth";
 
 const HowBlissway = () => {
+  const isDesktop = useCurrentWidth();
   const [ref, inView] = useInterSectionObserver();
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [state] = React.useState({
@@ -76,11 +79,19 @@ const HowBlissway = () => {
                   })`,
                 }}
               >
-                <video
-                  ref={videoRef}
-                  className={styles.intro__video}
-                  src={inView ? howBlisswayIntroVideo : ""}
-                />
+                {isDesktop ? (
+                  <video
+                    ref={videoRef}
+                    className={styles.intro__video}
+                    src={inView ? howBlisswayIntroVideoLg : ""}
+                  />
+                ) : (
+                  <video
+                    ref={videoRef}
+                    className={styles.intro__video}
+                    src={inView ? howBlisswayIntroVideoMobile : ""}
+                  />
+                )}
               </div>
             </div>
           </div>

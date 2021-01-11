@@ -17,6 +17,7 @@
     line-height: 20px;
     border-radius: 41px;
 }
+
 .active {
     @apply text-white;
     background-color: #1BA5DE;
@@ -34,13 +35,17 @@
         right: 13px;
 
     }
+
     .button {
+        padding: 6px 43px;
         border-radius: 41px;
-        padding: 10px 37px;
         font-size: 34px;
         line-height: 53px;
+        transform: rotate(-90deg);
     }
+
     .active {
-        padding: 14px 45px;
+        padding: 29px 33px;
+        transform: rotate(-90deg) translate(0px, 10px);
     }
 }

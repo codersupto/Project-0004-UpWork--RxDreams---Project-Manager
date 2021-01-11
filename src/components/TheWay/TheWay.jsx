@@ -3,22 +3,24 @@ import mobileUpShape from "../../assets/images/TheWay/shapes/mobile-up-shape.svg
 import lgUpShape from "../../assets/images/TheWay/shapes/lg-up-shape.svg";
 import mobileBottomShape from "../../assets/images/TheWay/shapes/mobile-bottom-shape.svg";
 import lgBottomShape from "../../assets/images/TheWay/shapes/lg-bottom-shape.svg";
-import theWayIntroVideo from "../../assets/videos/the-way-intro.mp4";
+import theWayIntroVideoLg from "../../assets/videos/TheWay/the-why-intro-video-lg.mp4";
+import theWayIntroVideoMobile from "../../assets/videos/TheWay/the-why-intro-video-mobile.mp4";
 import theWayIntroVideoBanner from "../../assets/images/TheWay/intro-video-banner.jpg";
 import playButtonIcon from "../../assets/images/TheWay/shapes/play-button-icon.svg";
 import lgPopUpShape from "../../assets/images/TheWay/shapes/lg-video-popup-shape.svg";
 import closeButtonIcon from "../../assets/images/TheWay/shapes/close-button-icon.svg";
 import styles from "./TheWay.module.css";
 import useInterSectionObserver from "../../utils/useInterSectionObserver";
+import useCurrentWidth from "../../utils/useCurrentWidth";
 
 const TheWay = () => {
+  const isDesktop = useCurrentWidth();
   const [ref, inView] = useInterSectionObserver();
   const [isPlaying, setIsPlaying] = React.useState(false);
   const [state] = React.useState({
     title: "The Why",
     subTitle: "of traffic congestion",
   });
-
   const videoRef = React.useRef({ current: null });
   const handlePlayVideo = () => {
     videoRef.current.play().then(() => {
@@ -90,11 +92,19 @@ const TheWay = () => {
                   })`,
                 }}
               >
-                <video
-                  ref={videoRef}
-                  className={styles.intro__video}
-                  src={inView ? theWayIntroVideo : ""}
-                />
+                {isDesktop ? (
+                  <video
+                    ref={videoRef}
+                    className={styles.intro__video}
+                    src={inView ? theWayIntroVideoMobile : ""}
+                  />
+                ) : (
+                  <video
+                    ref={videoRef}
+                    className={styles.intro__video}
+                    src={inView ? theWayIntroVideoLg : ""}
+                  />
+                )}
               </div>
             </div>
           </div>
